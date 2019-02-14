@@ -14,7 +14,7 @@ public class koneksi {
     public Connection connect(){
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            System.out.println("Berhasil Koneksi");
+            //System.out.println("Berhasil Koneksi");
         }
         catch (ClassNotFoundException ex){
             System.out.println(ex);
@@ -22,7 +22,7 @@ public class koneksi {
         String url = "jdbc:mysql://localhost:3306/siswa_baru";
         try{
             koneksi = DriverManager.getConnection(url, "root", "");
-            System.out.println("Berhasil Koneksi Database");
+            //System.out.println("Berhasil Koneksi Database");
         }
         catch (SQLException ex) {
             System.out.println(ex);
